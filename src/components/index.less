@@ -1,0 +1,14 @@
+@import "~ant-design-vue/lib/style/index";
+
+// The prefix to use on all css classes from ant-pro.
+@ant-pro-prefix             : ant-pro;
+
+.ant-table-body>table,.ant-table-fixed{
+    table-layout: fixed;
+
+    &>thead>tr>th,&>tbody>tr>td,&>tr>th,&>tr>td{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      } 
+}
